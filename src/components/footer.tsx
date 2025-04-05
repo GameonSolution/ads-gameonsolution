@@ -6,38 +6,38 @@ import {
   FaMedium,
   FaQuora,
 } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { MdCall, MdEmail, MdLocationPin } from "react-icons/md";
 
 export const Footer = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleNavClick = (path: string) => {
-    if (path.startsWith("#")) {
-      if (location.pathname !== "/") {
-        // If not on the home page, navigate to it first
-        navigate("/", { replace: true });
-        setTimeout(() => {
-          const section = document.querySelector(path);
-          if (section) section.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      } else {
-        // Scroll directly if already on the home page
-        const section = document.querySelector(path);
-        if (section) section.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      // External route navigation
-      navigate(path);
-    }
-  };
+  // const handleNavClick = (path: string) => {
+  //   if (path.startsWith("#")) {
+  //     if (location.pathname !== "/") {
+  //       // If not on the home page, navigate to it first
+  //       navigate("/", { replace: true });
+  //       setTimeout(() => {
+  //         const section = document.querySelector(path);
+  //         if (section) section.scrollIntoView({ behavior: "smooth" });
+  //       }, 100);
+  //     } else {
+  //       // Scroll directly if already on the home page
+  //       const section = document.querySelector(path);
+  //       if (section) section.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   } else {
+  //     // External route navigation
+  //     navigate(path);
+  //   }
+  // };
 
   return (
     <div className="flex flex-col gap-3 px-8 lg:px-28 py-16 lg:py-28 h-full w-full">
       <div className="w-full flex flex-col border-t border-b border-slate-100/20 py-10 px-0 lg:px-1 h-full gap-10">
         <div className="w-full flex flex-col lg:flex-row gap-10">
           <div className="flex flex-col lg:items-center lg:flex-row lg:w-[50%] w-full text-[12px] gap-5 lg:gap-10 font-secondary uppercase">
-            <p
+            {/* <p
               onClick={() => handleNavClick("#home")}
               className="hover:cursor-pointer hover:text-white"
             >
@@ -60,7 +60,7 @@ export const Footer = () => {
               className="hover:cursor-pointer hover:text-white"
             >
               Contact
-            </p>
+            </p> */}
           </div>
           <div className="flex lg:w-[50%] w-full text-[12px] gap-8 font-secondary lg:justify-end">
             <a
@@ -158,8 +158,9 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
         <p>©2025. All rights reserved.</p>
+        <p>Only for GameOn Solution Ads Page</p>
       </div>
     </div>
   );
