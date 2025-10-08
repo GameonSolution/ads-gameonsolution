@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
                         { path: "/football-turf", label: "Football Turf" },
                         { path: "/pickle-turf", label: "Pickle Ball" },
                         {
-                          path: "/circle-turf",
+                          path: "/360-circle-turf",
                           label: "Mini Cricket Stadium",
                         },
 

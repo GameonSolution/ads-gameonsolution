@@ -80,6 +80,6 @@ export const servicesObj = [
       "/Football/Football-02.png",
       "/Football/Football-03.png",
     ],
-    redirect: "/circle-turf",
+    redirect: "/360-circle-turf",
   },
 ];

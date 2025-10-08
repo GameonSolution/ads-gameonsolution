@@ -59,7 +59,7 @@ const CircleMiniCricketStadiumTurf = () => {
             <FaArrowRight className="text-lg sm:text-xl md:text-2xl group-hover:text-primary text-white/80 transform transition-transform duration-300 -rotate-45 ease-out group-hover:-rotate-0" />
             <p
               onClick={() => {
-                navigate("/circle-turf");
+                navigate("/360-circle-turf");
               }}
               className="text-xs sm:text-sm md:text-base group-hover:text-primary text-white/80 font-primary uppercase tracking-widest transition-colors duration-300 "
             >

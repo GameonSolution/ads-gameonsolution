@@ -26,7 +26,7 @@ const App: React.FC = () => {
           <Route path="/basket-ball" element={<BasketBallCourt />} />
           <Route path="/badminton-court" element={<BadmintonCourt />} />
           <Route path="/pickle-turf" element={<PickleTurf />} />
-          <Route path="/circle-turf" element={<CircleTurf />} />
+          <Route path="/360-circle-turf" element={<CircleTurf />} />
           <Route path="/football-turf" element={<FootballTurf />} />
           <Route path="/cricket-turf" element={<CricketTurf />} />
           <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
