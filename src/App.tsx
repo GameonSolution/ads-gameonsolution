@@ -7,12 +7,13 @@ import CricketTurf from "./components/products/cricket";
 import VolleyballTurf from "./components/products/volleyball";
 import MultiSportsTurf from "./components/products/multisports";
 import IndoorTurf from "./components/products/indoor";
-import PickleTurf from "./components/products/PickleTurf";
+import PickleTurf from "./components/products/PickleCourt";
 import CircleTurf from "./components/products/circleMiniCriketStadium";
 import CircleTurf360 from "./components/products/360CircleTurf";
 import BadmintonCourt from "./components/products/BadmintonCourt";
 import BasketBallCourt from "./components/products/basketBall";
 import HomePage from "./components/homePage";
+import AquaEcoTurf from "./components/products/aquaturf";
 
 const App: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
           <Route path="/indoor-turf" element={<IndoorTurf />} />
           <Route path="/volleyball-turf" element={<VolleyballTurf />} />
+          <Route path="/aqua-eco-friendly-turf" element={<AquaEcoTurf />} />
         </Routes>
       </div>
     </HelmetProvider>

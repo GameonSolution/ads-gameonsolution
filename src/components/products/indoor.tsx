@@ -1,82 +1,234 @@
+// import { Footer } from "../footer";
+// import Certificates from "./pageAnimation/certificates";
+// import { Container } from "./pageAnimation/container";
+// import { FadeIn } from "./pageAnimation/fade-in";
+// import { Hero } from "./pageAnimation/hero";
+// import { VideoCarousel } from "./pageAnimation/video-carousel";
+// import AnimateCard from "../animateCard";
+// import { useEffect } from "react";
+// import TabSEO from "../seoOptimize/index";
+
+// const IndoorTurf = () => {
+//   useEffect(() => {
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   }, []);
+//   return (
+//     <div className="">
+//       <TabSEO
+//         title="Indoor Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
+//         description="Get custom indoor sports turfs with advanced synthetic materials for year-round gameplay and training."
+//       />
+//       <div className="bg-background relative z-10 select-none">
+//         <Hero
+//           title={"INDOOR TURF "}
+//           subtitle={"FINDS ITS MARK"}
+//           bgImgUrl={
+//             "https://static.wixstatic.com/media/4c43d3_f327577b6eca48acb7752d3d746c1a58~mv2.jpeg/v1/fill/w_1216,h_257,al_c,q_80,enc_auto/bg.jpeg "
+//           }
+//         />
+//         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
+//           <FadeIn>
+//             <p className="text-secondary font-primary">INDOOR TURF</p>
+//           </FadeIn>
+//           <FadeIn>
+//             <p className="text-secondary">
+//               ESSENTIAL CONSIDERATIONS FOR INDOOR TURF
+//             </p>
+//           </FadeIn>
+//           <FadeIn>
+//             <span className="md:text-2xl text-lg">
+//               When constructing an indoor turf, key considerations must be
+//               Addressed to ensure functionality, durability, and player safety.
+//               Organizations like FIFA, FIBA, FIH provide recommended dimensions
+//               And specifications to ensure that indoor facilities meet the
+//               Requirements for professional or competitive play. However, for
+//               multi-purpose or recreational indoor turfs, the dimensions are
+//               often customized based on the intended use, available space, and
+//               client requirements.
+//             </span>
+//           </FadeIn>
+//         </Container>
+//       </div>
+//       <VideoCarousel title="Indoor Turf" carouselImages={indoorTurfItems} />
+//       <AnimateCard>
+//         <Certificates />
+//       </AnimateCard>
+
+//       <div className="flex gap-10  flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
+//         <div className="flex  md:flex-row flex-col gap-12 ">
+//           <div className="relative w-full  flex items-center justify-center ">
+//             <div className="relative flex items-center">
+//               <div className="w-full h-full overflow-hidden group">
+//                 <AnimateCard>
+//                   <img
+//                     src="https://static.wixstatic.com/media/4c43d3_f327577b6eca48acb7752d3d746c1a58~mv2.jpeg/v1/fill/w_1216,h_257,al_c,q_80,enc_auto/bg.jpeg "
+//                     className="   h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
+//                     alt="Director"
+//                   />
+//                 </AnimateCard>
+
+//                 {/* Inner Light Effect */}
+//                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none">
+//                   <div className="absolute inset-0 bg-black/25" />
+//                   <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-purple-800/20 to-yellow-500/50" />
+//                   <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-purple-800/20 to-yellow-500/50" />
+
+//                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/45 to-black/50" />
+//                   {/* Text Overlay */}
+//                   <div className="absolute inset-0 flex  items-end justify-center duration-500 ease-out p-4">
+//                     <p className="lg:text-xl flex-col flex text-white bg-transparent p-2 font-primary tracking-[3px] w-full text-center">
+//                       <span className="text-secondary">INDOOR TURF</span>
+//                     </p>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="w-full flex flex-col justify-center items-start gap-8  ">
+//           <AnimateCard>
+//             <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white  uppercase leading-tight">
+//               ESSENTIAL CONSIDERATIONS FOR INDOOR TURF
+//               <span className="text-secondary"> INDOOR TURF</span>
+//             </p>
+//           </AnimateCard>
+
+//           {/* Main Content */}
+//           <div className="flex flex-col gap-10   text-white font-secondary">
+//             <AnimateCard>
+//               <p className="md:text-2xl text-lg">
+//                 Depending on the intended purpose, the grass should be
+//                 constructed With precise measurements to meet the particular
+//                 interior space. Typically, these measurements range from 60 feet
+//                 (18.29 meters) to 120 feet (36.58 meters) in length and 30 feet
+//                 (9.14 meters) to 60 Feet (18.29 meters) in width.
+//               </p>
+//             </AnimateCard>
+//           </div>
+//         </div>
+//       </div>
+//       <Footer />
+//     </div>
+//   );
+// };
+// export default IndoorTurf;
+
+// const indoorTurfItems = [
+//   {
+//     poster:
+//       "https://static.wixstatic.com/media/4c43d3_8ab1c9e8f0124f4fb1c6ceba1e12190e~mv2.png/v1/fill/w_488,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-02.png",
+//     name: "Airplane",
+//     blurHash: "LEI#xy8^_4o|00R;%1Mx00_34oV@",
+//   },
+//   {
+//     poster:
+//       "https://static.wixstatic.com/media/4c43d3_7a36342e36ce4cd1b256127ac1ad3722~mv2.png/v1/fill/w_488,h_326,fp_0.50_0.47,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-05.png",
+//     name: "Family man",
+//     blurHash: "LLH_M2#j4WX.T@s.MixB~8SO9bs.",
+//   },
+//   {
+//     poster:
+//       "https://static.wixstatic.com/media/4c43d3_93db6e485dbf44e58148ef38aa5db9d1~mv2.png/v1/fill/w_420,h_662,fp_0.52_0.64,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-06.png",
+//     name: "Laboratory",
+//     blurHash: "L77n:SDm4U%K8|%KyCMz01tO?@W=",
+//   },
+//   {
+//     poster:
+//       "https://static.wixstatic.com/media/4c43d3_8b0f7a8bdede406a807d77ea75a3210a~mv2.png/v1/fill/w_466,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-04.png",
+//     name: "Napoleon",
+//     blurHash: "L77n:SDm4U%K8|%KyCMz01tO?@W=",
+//   },
+//   {
+//     poster:
+//       "https://static.wixstatic.com/media/4c43d3_a42f5b921efb4985b64fa716c98ed47b~mv2.png/v1/fill/w_466,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-03.png",
+//     name: "Person in Darkness",
+//     blurHash: "L77n:SDm4U%K8|%KyCMz01tO?@W=",
+//   },
+//   {
+//     poster:
+//       "https://static.wixstatic.com/media/4c43d3_69ceaf7ade584f05b07cf0600f5aa741~mv2.png/v1/crop/x_61,y_95,w_1569,h_2105/fill/w_478,h_662,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-01.pngg",
+//     name: "Scary Building",
+//     blurHash: "L77n:SDm4U%K8|%KyCMz01tO?@W=",
+//   },
+// ];
+
 import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
 import { Hero } from "./pageAnimation/hero";
 import { VideoCarousel } from "./pageAnimation/video-carousel";
-import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import { motion } from "framer-motion";
 
 const IndoorTurf = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
   return (
-    <div className="">
+    <div>
       <TabSEO
-        title="Indoor Turf Builders in South India | GameOnSolution"
+        title="Indoor Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
         description="Get custom indoor sports turfs with advanced synthetic materials for year-round gameplay and training."
       />
       <div className="bg-background relative z-10 select-none">
         <Hero
-          title={"INDOOR TURF "}
-          subtitle={"FINDS ITS MARK"}
-          bgImgUrl={
-            "https://static.wixstatic.com/media/4c43d3_f327577b6eca48acb7752d3d746c1a58~mv2.jpeg/v1/fill/w_1216,h_257,al_c,q_80,enc_auto/bg.jpeg "
-          }
+          title="INDOOR TURF"
+          subtitle="FINDS ITS MARK"
+          bgImgUrl="/Football/Football-08.webp"
         />
-        <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
+        <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <p className="text-secondary font-primary">INDOOR TURF</p>
+            <h1 className="text-secondary font-primary font-normal">
+              INDOOR TURF
+            </h1>
           </FadeIn>
           <FadeIn>
-            <p className="text-secondary">
+            <h2 className="text-secondary">
               ESSENTIAL CONSIDERATIONS FOR INDOOR TURF
-            </p>
+            </h2>
           </FadeIn>
           <FadeIn>
-            <span className="md:text-2xl text-lg">
-              When constructing an indoor turf, key considerations must be
-              Addressed to ensure functionality, durability, and player safety.
-              Organizations like FIFA, FIBA, FIH provide recommended dimensions
-              And specifications to ensure that indoor facilities meet the
-              Requirements for professional or competitive play. However, for
-              multi-purpose or recreational indoor turfs, the dimensions are
-              often customized based on the intended use, available space, and
-              client requirements.
-            </span>
+            <p className="md:text-2xl text-lg">
+              Constructing an indoor turf requires careful attention to design,
+              safety, and long-term performance. Governing bodies like FIFA,
+              FIBA, and FIH provide standardized dimensions and technical
+              guidelines to ensure that indoor sports facilities meet
+              professional and competitive play standards. At GameOn Solution,
+              we customize indoor turf construction based on client needs,
+              available space, and the intended purpose—whether it's for
+              football, basketball, or multi-sport recreational use. Our indoor
+              turf surfaces are engineered for maximum durability, player
+              safety, and adaptability, making them ideal for both professional
+              training and community sports environments.
+            </p>
           </FadeIn>
         </Container>
       </div>
-      <VideoCarousel title="Indoor Turf" carouselImages={indoorTurfItems} />
-      <AnimateCard>
-        <Certificates />
-      </AnimateCard>
 
-      <div className="flex gap-10  flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
-        <div className="flex  md:flex-row flex-col gap-12 ">
-          <div className="relative w-full  flex items-center justify-center ">
+      <VideoCarousel title="Indoor Turf" carouselImages={indoorTurfItems} />
+
+      <Certificates />
+
+      <div className="flex gap-10 flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
+        <div className="flex md:flex-row flex-col gap-12">
+          <div className="relative w-full flex items-center justify-center">
             <div className="relative flex items-center">
               <div className="w-full h-full overflow-hidden group">
-                <AnimateCard>
-                  <img
-                    src="https://static.wixstatic.com/media/4c43d3_f327577b6eca48acb7752d3d746c1a58~mv2.jpeg/v1/fill/w_1216,h_257,al_c,q_80,enc_auto/bg.jpeg "
-                    className="   h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
-                    alt="Director"
-                  />
-                </AnimateCard>
-
-                {/* Inner Light Effect */}
+                <img
+                  src="https://static.wixstatic.com/media/4c43d3_f327577b6eca48acb7752d3d746c1a58~mv2.jpeg/v1/fill/w_1216,h_257,al_c,q_80,enc_auto/bg.jpeg"
+                  className="h-full object-cover transition-transform duration-500 ease-out scale-105 group-hover:scale-100"
+                  alt="Indoor Turf Example"
+                />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none">
                   <div className="absolute inset-0 bg-black/25" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-purple-800/20 to-yellow-500/50" />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-purple-800/20 to-yellow-500/50" />
-
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/45 to-black/50" />
-                  {/* Text Overlay */}
-                  <div className="absolute inset-0 flex  items-end justify-center duration-500 ease-out p-4">
-                    <p className="lg:text-xl flex-col flex text-white bg-transparent p-2 font-primary tracking-[3px] w-full text-center">
+                  <div className="absolute inset-0 flex items-end justify-center p-4">
+                    <p className="lg:text-xl text-white bg-transparent p-2 font-primary tracking-[3px] w-full text-center">
                       <span className="text-secondary">INDOOR TURF</span>
                     </p>
                   </div>
@@ -86,32 +238,160 @@ const IndoorTurf = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col justify-center items-start gap-8  ">
-          <AnimateCard>
-            <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white  uppercase leading-tight">
-              ESSENTIAL CONSIDERATIONS FOR INDOOR TURF
-              <span className="text-secondary"> INDOOR TURF</span>
-            </p>
-          </AnimateCard>
+        <div className="w-full flex flex-col justify-center gap-8 items-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white uppercase leading-tight">
+            ESSENTIAL CONSIDERATIONS FOR{" "}
+            <span className="text-secondary">INDOOR TURF</span>
+          </h2>
 
-          {/* Main Content */}
-          <div className="flex flex-col gap-10   text-white font-secondary">
-            <AnimateCard>
-              <p className="md:text-2xl text-lg">
-                Depending on the intended purpose, the grass should be
-                constructed With precise measurements to meet the particular
-                interior space. Typically, these measurements range from 60 feet
-                (18.29 meters) to 120 feet (36.58 meters) in length and 30 feet
-                (9.14 meters) to 60 Feet (18.29 meters) in width.
-              </p>
-            </AnimateCard>
+          <div className="flex flex-col gap-10 text-white font-secondary">
+            <p className="md:text-2xl text-lg">
+              Depending on the intended purpose, the grass should be constructed
+              with precise measurements to meet the particular interior space.
+              Typically, these measurements range from 60 feet (18.29 meters) to
+              120 feet (36.58 meters) in length and 30 feet (9.14 meters) to 60
+              feet (18.29 meters) in width.
+            </p>
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="flex flex-col gap-12 px-10 md:px-20 lg:px-[7.5rem] py-20 text-white font-secondary"
+      >
+        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-secondary uppercase">
+          Expert Football Turf Installation Services South India - GameOn
+          Solution
+        </h2>
+
+        <p className="md:text-2xl text-lg leading-relaxed">
+          Upgrade your pitch with{" "}
+          <strong>high-quality FIFA-certified football turf</strong>
+          designed to perform in all weather conditions. If you&apos;re looking
+          for professional{" "}
+          <strong className="text-secondary">
+            football turf installation in Chennai, Bangalore, Hyderabad, or
+            anywhere in South India
+          </strong>
+          , GameOn Solution is your trusted partner. Our eco-friendly, durable
+          football turfs provide world-class playing conditions for academies,
+          community fields, and professional stadiums.
+        </p>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Why Choose GameOn Solution for Football Turf Installation?
+        </h3>
+        <ul className="list-disc pl-5 md:text-xl text-lg space-y-3">
+          <li>
+            <strong>Environmentally Safe Grass Solutions:</strong> We use
+            recyclable, non-toxic materials, ensuring safe play and a minimal
+            environmental footprint.
+          </li>
+          <li>
+            <strong>Aqua Eco-Friendly Grass Systems:</strong> Advanced
+            piezo-drainage technology saves up to 70% water compared to natural
+            grass.
+          </li>
+          <li>
+            <strong>FIFA Pro Certified Quality:</strong> Tested for ball roll,
+            bounce, player interaction, and shock absorption for professional
+            play.
+          </li>
+          <li>
+            <strong>All-Weather Durability:</strong> Play year-round without
+            worrying about monsoons or extreme heat in South India.
+          </li>
+        </ul>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Football Turf Installation Process
+        </h3>
+        <ol className="list-decimal pl-5 md:text-xl text-lg space-y-3">
+          <li>
+            <strong>Site Evaluations & Planning</strong> - Assessing drainage,
+            soil, and climate.
+          </li>
+          <li>
+            <strong>Ground Preparation</strong> - Creating a stable base with
+            perfect drainage.
+          </li>
+          <li>
+            <strong>Professional Installation</strong> - Using FIFA-approved
+            artificial turf with precise joints.
+          </li>
+          <li>
+            <strong>Quality Assurance</strong> - Comprehensive checks to meet
+            international football standards.
+          </li>
+        </ol>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Benefits of Our Football Turf Systems
+        </h3>
+        <ul className="list-disc pl-5 md:text-xl text-lg space-y-3">
+          <li>All-climate performance with zero downtime.</li>
+          <li>Low maintenance and cost savings over natural grass.</li>
+          <li>Durable and safe for players with consistent ball roll.</li>
+          <li>Quick project delivery and long-term warranty coverage.</li>
+        </ul>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Service Locations Across South India
+        </h3>
+        <p className="md:text-xl text-lg">
+          GameOn Solution offers{" "}
+          <strong>football turf construction and installation</strong>
+          in Tamil Nadu{" "}
+          <span className="text-secondary">(Chennai, Coimbatore, Madurai)</span>
+          , Karnataka{" "}
+          <span className="text-secondary">(Bangalore, Mysore)</span>, Andhra
+          Pradesh{" "}
+          <span className="text-secondary">(Vijayawada, Visakhapatnam)</span>,
+          Kerala <span className="text-secondary">(Kochi, Trivandrum)</span>,
+          and Telangana{" "}
+          <span className="text-secondary">(Hyderabad, Warangal)</span>.
+        </p>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Why Eco-Friendly Football Turf?
+        </h3>
+        <p className="md:text-xl text-lg">
+          Our <strong>eco-friendly football grass</strong> eliminates toxic
+          rubber infill and uses silica sand or organic alternatives. It stays
+          cooler in the South Indian climate, provides excellent drainage during
+          monsoons, and is 100% recyclable.
+        </p>
+
+        <ul className="list-disc pl-5 md:text-xl text-lg space-y-3">
+          <li>No toxic rubber exposure or respiratory risks.</li>
+          <li>Colder surface temperature with superior drainage.</li>
+          <li>FIFA Pro-level playability with 10+ years of durability.</li>
+          <li>Environmentally safe and fully recyclable materials.</li>
+        </ul>
+
+        <p className="md:text-xl text-lg mt-6">
+          <strong>Transform your football field with GameOn Solution</strong>.
+          Contact us today for a free site assessment and professional quote.
+          Experience world-class{" "}
+          <a
+            href="/blog/turf-cricket-installation"
+            className="text-secondary underline"
+          >
+            turf installation
+          </a>{" "}
+          that delivers durability, eco-friendliness, and top performance for
+          South India&apos;s climate.
+        </p>
+      </motion.div>
+
       <Footer />
     </div>
   );
 };
+
 export default IndoorTurf;
 
 const indoorTurfItems = [

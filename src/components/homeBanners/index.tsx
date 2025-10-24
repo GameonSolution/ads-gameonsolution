@@ -7,9 +7,15 @@ import TextHoverAnimation from "../textHoverAnimation";
 
 const pages = [
   {
+    title: "Aqua Eco-Friendly Turf",
+    description: "Premium indoor turf solutions.",
+    image: "/aquaturf/1.webp",
+    route: "/aqua-eco-friendly-turf",
+  },
+  {
     title: "360 Circle Turf",
     description: "Next-gen 360° view turf experience.",
-    image: "/CircleMiniCricketStadiumTurff/PLT_00017.jpg",
+    image: "/360/6.webp",
     route: "/360-circle-turf",
   },
   {
@@ -25,17 +31,17 @@ const pages = [
     route: "/badminton-court",
   },
   {
-    title: "Pickle Turf",
+    title: "PickleBall Court",
     description: "Fun pickleball courts for everyone.",
-    image: "/pickleTurf/pickle-turf-004.jpg",
+    image: "/pickleTurf/Pickle1.webp",
     route: "/pickle-turf",
   },
-  {
-    title: "Circle Turf",
-    description: "Circular multi-use turf spaces.",
-    image: "/CircleMiniCricketStadiumTurff/PLT_00022.jpg",
-    route: "/360-circle-turf",
-  },
+  // {
+  //   title: "Circle Turf",
+  //   description: "Circular multi-use turf spaces.",
+  //   image: "/360/4.webp",
+  //   route: "/360-circle-turf",
+  // },
   {
     title: "Football Turf",
     description: "5-a-side and 7-a-side football turfs.",
@@ -51,13 +57,13 @@ const pages = [
   {
     title: "Multi Sports Turf",
     description: "All-in-one turf for multiple games.",
-    image: "/homepageSlideImages/5.jpeg",
+    image: "/blog/Blog1.webp",
     route: "/multi-sports-turf",
   },
   {
     title: "Indoor Turf",
     description: "Premium indoor turf solutions.",
-    image: "/pickleTurf/pickle-turf-006.jpg",
+    image: "/CricketNets/Cricket-Nets-002.webp",
     route: "/indoor-turf",
   },
 ];
