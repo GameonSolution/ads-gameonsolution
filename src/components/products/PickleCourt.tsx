@@ -109,8 +109,6 @@
 //   },
 // ];
 
-/// Edited SEO Optimzed code
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -118,6 +116,7 @@ import { Hero } from "./pageAnimation/hero";
 import { VideoCarousel } from "./pageAnimation/video-carousel";
 import AnimateCard from "../animateCard";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 // import { Helmet } from "react-helmet-async";
 
 const PickleballCourt = () => {
@@ -203,6 +202,8 @@ const PickleballCourt = () => {
 
       <VideoCarousel title="Pickle Turf" carouselImages={PickleTurfItems} />
 
+      <Testimonials videoIds={["eLRRphd3FHk", "_jwQ3ORhzVA", "QJ1v4shTzac"]} />
+
       <section className="bg-background text-white py-24">
         <Container className="md:max-w-[1200px]">
           <div className="grid gap-12 lg:grid-cols-2 items-start">
@@ -244,15 +245,6 @@ const PickleballCourt = () => {
                     anti-glare mounting
                   </p>
                 </div>
-              </div>
-
-              <div className="mt-6">
-                <a
-                  href="https://gameonsolution.in/"
-                  className="inline-block rounded-full px-6 py-3 border-2 border-white bg-white text-black font-semibold"
-                >
-                  Get a free site survey
-                </a>
               </div>
             </div>
 
@@ -365,14 +357,6 @@ const PickleballCourt = () => {
                 will keep the court safe and playable. Good drainage and
                 UV-resistant materials extend lifespan.
               </p>
-
-              <p>
-                For a professional installation or maintenance plan,{" "}
-                <a href="https://gameonsolution.in/" className="underline">
-                  Contact GameOn Solution
-                </a>{" "}
-                for a site survey and quote.
-              </p>
             </article>
           </div>
         </Container>
@@ -381,8 +365,6 @@ const PickleballCourt = () => {
       <AnimateCard>
         <Certificates />
       </AnimateCard>
-
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 "use client";
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -129,7 +128,6 @@ const AquaEcoTurf = () => {
           </motion.div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

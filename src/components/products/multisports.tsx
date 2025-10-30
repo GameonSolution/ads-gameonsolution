@@ -155,7 +155,6 @@
 //   },
 // ];
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -164,6 +163,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const MultiSportsTurf = () => {
   useEffect(() => {
@@ -210,6 +210,7 @@ const MultiSportsTurf = () => {
         </Container>
       </div>
       <VideoCarousel title="Multi-sports Turf" carouselImages={cricketItems} />
+      <Testimonials videoIds={["roDlMPjhQhI", "HYyoMwxdNG4", "QJ1v4shTzac"]} />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -285,7 +286,6 @@ const MultiSportsTurf = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

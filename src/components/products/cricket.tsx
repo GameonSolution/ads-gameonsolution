@@ -157,7 +157,6 @@
 //   },
 // ];
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -166,6 +165,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
+import Testimonials from "../testimonial";
 
 const CricketTurf = () => {
   useEffect(() => {
@@ -269,6 +269,8 @@ const CricketTurf = () => {
         </div>
       </section>
 
+      <Testimonials videoIds={["roDlMPjhQhI", "HYyoMwxdNG4", "QJ1v4shTzac"]} />
+
       {/* Certificates */}
       <section className="px-4 md:px-10 py-10">
         <motion.div
@@ -279,8 +281,6 @@ const CricketTurf = () => {
           <Certificates />
         </motion.div>
       </section>
-
-      <Footer />
     </div>
   );
 };

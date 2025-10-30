@@ -209,15 +209,14 @@ export const Hero = ({ title, subtitle, bgImgUrl }: HeroProps) => {
 
     const payload: Record<string, unknown> = {
       api_token: API_TOKEN,
-      // Required keys the automation checks for:
       contact_name: name,
-      // include either contact_phone or contact_email (or both)
       ...(phone ? { contact_phone: phone } : {}),
       ...(email ? { contact_email: email } : {}),
 
-      // Also include the exact template keys you wanted
+      // Template fields
       "{%contact.name%}": name,
       "{%contact.phone_number%}": phone,
+      "{%contact.email%}": email,
       "{%contact.location_fzv%}": location,
       "{%contact.your_message_%}": message,
     };
@@ -247,7 +246,6 @@ export const Hero = ({ title, subtitle, bgImgUrl }: HeroProps) => {
         form.reset();
       } else {
         setStatus("error");
-        // Prefer server message if present
         const msg =
           (json && (json.message || JSON.stringify(json))) ??
           `Request failed with status ${res.status}`;
@@ -321,6 +319,12 @@ export const Hero = ({ title, subtitle, bgImgUrl }: HeroProps) => {
                 type="tel"
                 name="phone"
                 placeholder="Phone Number"
+                className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
                 className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"
               />
               <input

@@ -8,61 +8,97 @@ import TextHoverAnimation from "../textHoverAnimation";
 const pages = [
   {
     title: "Aqua Eco-Friendly Turf",
-    description: "Premium indoor turf solutions.",
+    description: "Sustainable turf with water-efficient technology.",
     image: "/aquaturf/1.webp",
     route: "/aqua-eco-friendly-turf",
   },
   {
     title: "360 Circle Turf",
-    description: "Next-gen 360° view turf experience.",
+    description: "Experience the next-gen 360° view turf design.",
     image: "/360/6.webp",
     route: "/360-circle-turf",
   },
   {
-    title: "Basketball Court",
-    description: "Professional standard courts for ballers.",
-    image: "/basketBall/2.webp",
-    route: "/basket-ball",
+    title: "360 Circle Turf Tamil Version",
+    description: "Localized version of the 360° Circle Turf experience.",
+    image: "/360/4.webp",
+    route: "/360-circle-turf-tamil",
+  },
+  {
+    title: "Diagonal Pitch",
+    description: "Modern turf layout optimized for performance.",
+    image: "/diagonal/1.webp",
+    route: "/diagonal-pitch",
+  },
+  {
+    title: "Oval Turf",
+    description: "Elegant oval-shaped turf design for flexible play.",
+    image: "/oval/O1.webp",
+    route: "/oval-turf",
+  },
+  {
+    title: "Semi Circle Turf",
+    description: "Smart design for limited spaces & small arenas.",
+    image: "/semicircle/1.webp",
+    route: "/semi-circle-turf",
+  },
+  {
+    title: "U Shape Turf",
+    description: "Innovative U-shaped turf design for dual-side games.",
+    image: "/Ushape/UST.webp",
+    route: "/u-shape-turf",
+  },
+  {
+    title: "Eco Friendly Turf",
+    description: "Safe, non-toxic, and durable turf for every use.",
+    image: "/ecofriendly/4.webp",
+    route: "/eco-friendly-turf",
+  },
+  {
+    title: "Skating Rink",
+    description: "Smooth, high-grip surfaces for skating lovers.",
+    image: "/skating/S3.webp",
+    route: "/skating-rink",
   },
   {
     title: "Badminton Court",
-    description: "Book indoor/outdoor badminton courts.",
+    description: "Indoor and outdoor badminton courts for all levels.",
     image: "/badminton/3.webp",
     route: "/badminton-court",
   },
   {
+    title: "Basketball Court",
+    description: "Professional-grade basketball flooring systems.",
+    image: "/basketBall/2.webp",
+    route: "/basket-ball",
+  },
+  {
     title: "PickleBall Court",
-    description: "Fun pickleball courts for everyone.",
+    description: "Vibrant pickleball courts for casual and pro play.",
     image: "/pickleTurf/Pickle1.webp",
     route: "/pickle-turf",
   },
-  // {
-  //   title: "Circle Turf",
-  //   description: "Circular multi-use turf spaces.",
-  //   image: "/360/4.webp",
-  //   route: "/360-circle-turf",
-  // },
   {
     title: "Football Turf",
-    description: "5-a-side and 7-a-side football turfs.",
+    description: "5-a-side and 7-a-side FIFA-standard football turfs.",
     image: "/Football/1.webp",
     route: "/football-turf",
   },
   {
     title: "Cricket Turf",
-    description: "Practice nets and mini cricket grounds.",
+    description: "Practice nets and professional cricket grounds.",
     image: "/homepageSlideImages/5.jpeg",
     route: "/cricket-turf",
   },
   {
     title: "Multi Sports Turf",
-    description: "All-in-one turf for multiple games.",
+    description: "Versatile turf designed for multiple sports in one space.",
     image: "/blog/Blog1.webp",
     route: "/multi-sports-turf",
   },
   {
     title: "Indoor Turf",
-    description: "Premium indoor turf solutions.",
+    description: "Premium indoor turf solutions for limited spaces.",
     image: "/CricketNets/Cricket-Nets-002.webp",
     route: "/indoor-turf",
   },
@@ -82,7 +118,7 @@ const HomeBanners: React.FC = () => {
 
       {/* Header Text */}
       <section className="w-full px-6 pt-12">
-        <div className="tet-center">
+        <div className="text-center">
           <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-[2.5rem] flex items-center justify-center gap-2 font-primary text-white uppercase leading-tight">
             <span className="text-secondary">
               <SlBadge />
@@ -100,7 +136,7 @@ const HomeBanners: React.FC = () => {
           {pages.map((page, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer transform"
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1"
               onClick={() => navigate(page.route)}
             >
               <img

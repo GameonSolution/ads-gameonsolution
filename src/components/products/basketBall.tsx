@@ -154,7 +154,6 @@
 
 "use client";
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -163,6 +162,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const BasketBallCourt = () => {
   useEffect(() => {
@@ -216,6 +216,8 @@ const BasketBallCourt = () => {
         title="Basketball Court"
         carouselImages={basketballItems}
       />
+
+      <Testimonials videoIds={["Pycz6S2Si-c", "roDlMPjhQhI", "Mv-WmPfkp_8"]} />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -286,7 +288,6 @@ const BasketBallCourt = () => {
           </motion.div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

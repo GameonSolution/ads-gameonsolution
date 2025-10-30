@@ -8,12 +8,18 @@ import VolleyballTurf from "./components/products/volleyball";
 import MultiSportsTurf from "./components/products/multisports";
 import IndoorTurf from "./components/products/indoor";
 import PickleTurf from "./components/products/PickleCourt";
-import CircleTurf from "./components/products/circleMiniCriketStadium";
-import CircleTurf360 from "./components/products/360CircleTurf";
 import BadmintonCourt from "./components/products/BadmintonCourt";
 import BasketBallCourt from "./components/products/basketBall";
 import HomePage from "./components/homePage";
-import AquaEcoTurf from "./components/products/aquaturf";
+import Turf360 from "./components/ourproducts/Turf360";
+import AquaEcoFriendly from "./components/ourproducts/AquaEcoFriendly";
+import DiagonalPitch from "./components/ourproducts/DiagonalPitch";
+import OvalTurf from "./components/ourproducts/OvalTurf";
+import SemiCircleTurf from "./components/ourproducts/SemiCircleTurf";
+import SkatingRink from "./components/ourproducts/SkatingRink";
+import UShapeTurf from "./components/ourproducts/UShapeTurf";
+import Turf3601 from "./components/ourproducts/Turf3601";
+import EcoFriendly from "./components/ourproducts/EcoFriendly";
 
 const App: React.FC = () => {
   return (
@@ -23,17 +29,24 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
 
           {/* product pages */}
-          <Route path="/360-circle-turf" element={<CircleTurf360 />} />
+          <Route path="/360-circle-turf" element={<Turf360 />} />
+          <Route path="/360-circle-turf-tamil" element={<Turf3601 />} />
+          <Route path="/aqua-eco-friendly-turf" element={<AquaEcoFriendly />} />
+          <Route path="/diagonal-pitch" element={<DiagonalPitch />} />
+          <Route path="/oval-turf" element={<OvalTurf />} />
+          <Route path="/semi-circle-turf" element={<SemiCircleTurf />} />
+          <Route path="/skating-rink" element={<SkatingRink />} />
+          <Route path="/u-shape-turf" element={<UShapeTurf />} />
+          <Route path="/eco-friendly-turf" element={<EcoFriendly />} />
+
           <Route path="/basket-ball" element={<BasketBallCourt />} />
           <Route path="/badminton-court" element={<BadmintonCourt />} />
           <Route path="/pickle-turf" element={<PickleTurf />} />
-          <Route path="/360-circle-turf" element={<CircleTurf />} />
           <Route path="/football-turf" element={<FootballTurf />} />
           <Route path="/cricket-turf" element={<CricketTurf />} />
           <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
           <Route path="/indoor-turf" element={<IndoorTurf />} />
           <Route path="/volleyball-turf" element={<VolleyballTurf />} />
-          <Route path="/aqua-eco-friendly-turf" element={<AquaEcoTurf />} />
         </Routes>
       </div>
     </HelmetProvider>

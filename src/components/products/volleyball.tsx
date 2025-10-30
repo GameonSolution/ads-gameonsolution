@@ -158,7 +158,6 @@
 //   },
 // ];
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -167,6 +166,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const VolleyballTurf = () => {
   useEffect(() => {
@@ -222,6 +222,7 @@ const VolleyballTurf = () => {
       </div>
 
       <VideoCarousel title="Volleyball Turf" carouselImages={cricketItems} />
+      <Testimonials videoIds={["eLRRphd3FHk", "_jwQ3ORhzVA", "QJ1v4shTzac"]} />
 
       <AnimateCard>
         <Certificates />
@@ -281,7 +282,6 @@ const VolleyballTurf = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -127,7 +127,6 @@
 //   },
 // ];
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -136,6 +135,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
+import Testimonials from "../testimonial";
 
 const CircleTurf = () => {
   useEffect(() => {
@@ -206,6 +206,8 @@ const CircleTurf = () => {
         carouselImages={CircleMiniCricketItems}
       />
 
+      <Testimonials videoIds={["HYyoMwxdNG4", "-UBDqeQcR_E", "roDlMPjhQhI"]} />
+
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -215,8 +217,6 @@ const CircleTurf = () => {
       >
         <Certificates />
       </motion.section>
-
-      <Footer />
     </div>
   );
 };

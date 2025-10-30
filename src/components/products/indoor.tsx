@@ -153,7 +153,6 @@
 //   },
 // ];
 
-import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -162,6 +161,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
+import Testimonials from "../testimonial";
 
 const IndoorTurf = () => {
   useEffect(() => {
@@ -210,7 +210,7 @@ const IndoorTurf = () => {
       </div>
 
       <VideoCarousel title="Indoor Turf" carouselImages={indoorTurfItems} />
-
+      <Testimonials videoIds={["roDlMPjhQhI", "HYyoMwxdNG4", "QJ1v4shTzac"]} />
       <Certificates />
 
       <div className="flex gap-10 flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
@@ -386,8 +386,6 @@ const IndoorTurf = () => {
           South India&apos;s climate.
         </p>
       </motion.div>
-
-      <Footer />
     </div>
   );
 };
