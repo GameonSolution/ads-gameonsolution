@@ -84,7 +84,7 @@ const EcoFriendly: React.FC = () => {
         </motion.div>
       </div> */}
 
-      <div className="relative h-[75vh] flex items-center justify-center">
+      <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/Football/Football-02.webp"
           alt="Eco Friendly Turf"
@@ -101,7 +101,7 @@ const EcoFriendly: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left - Headline + description */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl text-secondary font-primary mb-4 uppercase">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl text-secondary font-primary mb-4 uppercase">
                 Eco Friendly Turf
               </h1>
               <p className="text-gray-200 max-w-2xl mx-auto text-xl md:text-2xl font-medium">

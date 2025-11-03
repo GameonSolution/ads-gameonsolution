@@ -122,7 +122,7 @@ const Turf360: React.FC = () => {
   return (
     <div className="bg-[#0a1a0a] text-white font-secondary">
       {/* HERO - left content + right contact form */}
-      <div className="relative h-[75vh] flex items-center justify-center">
+      <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/360/5.webp"
           alt="360 Turf - Premium"
@@ -139,7 +139,7 @@ const Turf360: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left - Headline + description */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl bg-gradient-to-r from-green-400 to-lime-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl bg-gradient-to-r from-green-400 to-lime-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
                 360° Turf
               </h1>
               <p className="text-gray-200 max-w-3xl mx-auto text-lg md:text-xl font-medium">

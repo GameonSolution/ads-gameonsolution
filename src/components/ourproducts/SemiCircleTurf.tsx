@@ -32,7 +32,7 @@ const SemiCircleTurf: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#07160e] via-[#0a2414] to-[#071614] text-white font-secondary">
-      <div className="relative h-[75vh] flex items-center justify-center">
+      <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/semicircle/1.webp"
           alt="Semi Circle Turf - Premium"
@@ -49,7 +49,7 @@ const SemiCircleTurf: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left - Headline + description */}
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-primary tracking-tight uppercase">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl font-primary tracking-tight uppercase">
                 <span className="bg-gradient-to-r from-[#94f0b6] to-[#d4af37] bg-clip-text text-transparent">
                   Semi Circle Turf
                 </span>

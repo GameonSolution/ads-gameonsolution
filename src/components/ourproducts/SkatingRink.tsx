@@ -14,7 +14,7 @@ const SkatingRink: React.FC = () => {
     <div className="bg-[#0b0a0f] text-white font-secondary">
       {/* ✅ HERO */}
 
-      <div className="relative h-[75vh] flex items-center justify-center">
+      <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/skating/S2.webp"
           alt="Skating Rink - Premium"
@@ -31,7 +31,7 @@ const SkatingRink: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left - Headline + description */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
                 Skating Rink
               </h1>
               <p className="text-gray-200 max-w-3xl mx-auto text-xl md:text-2xl font-medium">

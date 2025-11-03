@@ -151,8 +151,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-cyan-400 text-black font-semibold py-2 px-6 rounded-lg hover:bg-cyan-300 transition duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
-        >
+          className="bg-green-400 text-black font-semibold py-2 px-6 rounded-lg hover:bg-green-300 transition duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+          >
           {isSubmitting ? "Sending..." : "Request Quotation"}
         </button>
       </div>

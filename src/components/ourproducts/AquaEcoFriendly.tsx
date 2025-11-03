@@ -1,13 +1,102 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import ContactForm from "../ContactForm";
 import Testimonials from "../testimonial";
 
 const AquaEcoFriendly: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  // Form state & API
+  const [status, setStatus] = React.useState<"idle" | "success" | "error">(
+    "idle"
+  );
+  const [serverMessage, setServerMessage] = React.useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+
+  const API_ENDPOINT =
+    "https://login.gameonsolution.in/api/automations/68ef48a60c4e5/execute";
+  const API_TOKEN = "b32ee517e4aea683ecaf892f38bd873d";
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (isSubmitting) return;
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    const name = String(data.get("name") ?? "").trim();
+    const phone = String(data.get("phone") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+    const location = String(data.get("location") ?? "").trim();
+    const message = String(data.get("message") ?? "").trim();
+
+    if (!name) {
+      setServerMessage("Name is required.");
+      setStatus("error");
+      return;
+    }
+
+    if (!phone && !email) {
+      setServerMessage("Please provide phone or email.");
+      setStatus("error");
+      return;
+    }
+
+    const payload: Record<string, unknown> = {
+      api_token: API_TOKEN,
+      contact_name: name,
+      ...(phone ? { contact_phone: phone } : {}),
+      ...(email ? { contact_email: email } : {}),
+
+      // Template keys required
+      "{%contact.name%}": name,
+      "{%contact.phone_number%}": phone,
+      "{%contact.email%}": email,
+      "{%contact.location_fzv%}": location,
+      "{%contact.your_message_%}": message,
+    };
+
+    try {
+      setIsSubmitting(true);
+      setStatus("idle");
+      setServerMessage(null);
+
+      const res = await fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const json = await res.json().catch(() => null);
+
+      if (res.ok) {
+        setStatus("success");
+        setServerMessage(
+          (json && (json.message || JSON.stringify(json))) ??
+            "Form submitted successfully."
+        );
+        form.reset();
+      } else {
+        setStatus("error");
+        const msg =
+          (json && (json.message || JSON.stringify(json))) ??
+          `Request failed with status ${res.status}`;
+        setServerMessage(msg);
+        console.error("API error:", msg, json);
+      }
+    } catch (err) {
+      console.error("Network error:", err);
+      setStatus("error");
+      setServerMessage("Network error — please check console.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
@@ -33,7 +122,7 @@ const AquaEcoFriendly: React.FC = () => {
   return (
     <div className="bg-[#061d28] text-white font-secondary">
       {/* ✅ HERO - AQUA THEMED */}
-      <div className="relative h-[75vh] flex items-center justify-center">
+      <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/aquaturf/3.webp"
           alt="Aqua Eco Friendly Turf - Premium"
@@ -50,12 +139,12 @@ const AquaEcoFriendly: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left - Headline + description */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
                 Aqua Eco Friendly Turf
               </h1>
               <p className="text-gray-200 max-w-3xl mx-auto text-lg md:text-xl font-medium">
                 <span className="text-cyan-400 font-bold">Gen Alpha Turf</span>{" "}
-                – the{" "}
+                - the{" "}
                 <span className="text-cyan-300 font-bold">
                   luxury, next-generation
                 </span>{" "}
@@ -64,8 +153,73 @@ const AquaEcoFriendly: React.FC = () => {
               </p>
             </div>
 
-            {/* Right - Reusable Contact Form */}
-            <ContactForm />
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white rounded-2xl p-6 shadow-xl text-black mx-auto w-full max-w-md"
+            >
+              <h3 className="text-xl mb-2 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-primary">
+                Get a Quotation for Your Turf Construction
+              </h3>
+
+              <div className="grid grid-cols-1 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"
+                />
+                <input
+                  type="text"
+                  name="location"
+                  placeholder="Location"
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows={3}
+                  className="border border-gray-300 rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-secondary"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-cyan-400 text-black font-semibold py-2 px-6 rounded-lg hover:bg-cyan-300 transition duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? "Sending..." : "Request Quotation"}
+                </button>
+              </div>
+
+              {/* Submission Status Message */}
+              {status !== "idle" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className={`text-sm font-medium p-3 rounded-md mt-4 ${
+                    status === "success"
+                      ? "text-green-700 bg-green-100"
+                      : "text-red-700 bg-red-100"
+                  }`}
+                >
+                  {serverMessage ??
+                    (status === "success" ? "Success" : "Error")}
+                </motion.div>
+              )}
+            </form>
           </div>
         </motion.div>
       </div>
