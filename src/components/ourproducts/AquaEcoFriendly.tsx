@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import Testimonials from "../testimonial";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const AquaEcoFriendly: React.FC = () => {
   useEffect(() => {
@@ -272,6 +274,10 @@ const AquaEcoFriendly: React.FC = () => {
       </div>
 
       <Testimonials videoIds={["Qn-bi9z8Lko", "zVnlhMtMwHA", "dBkr5G92fDg"]} />
+
+      <Certificates />
+
+      <Awards />
 
       {/* ✅ AQUA ECO-FRIENDLY TURF SECTION */}
       <div className="py-20 bg-[#052029] text-white">

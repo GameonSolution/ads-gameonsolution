@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import ContactForm from "../ContactForm";
 import Testimonials from "../testimonial";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const SemiCircleTurf: React.FC = () => {
   useEffect(() => {
@@ -121,6 +123,10 @@ const SemiCircleTurf: React.FC = () => {
       </div>
 
       <Testimonials videoIds={["roDlMPjhQhI", "HYyoMwxdNG4", "QJ1v4shTzac"]} />
+
+      <Certificates />
+
+      <Awards />
 
       {/* SPECIFICATIONS */}
       <section className="py-16">

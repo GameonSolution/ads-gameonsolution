@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import ContactForm from "../ContactForm";
 import Testimonials from "../testimonial";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const DiagonalPitch: React.FC = () => {
   useEffect(() => {
@@ -118,6 +120,10 @@ const DiagonalPitch: React.FC = () => {
       </div>
 
       <Testimonials videoIds={["N-8Sz7q75no", "Fum9qqjka-Y", "Mv-WmPfkp_8"]} />
+
+      <Certificates />
+
+      <Awards />
 
       {/* SPECIFICATIONS */}
       <div className="py-20 bg-[#071b12] text-white">

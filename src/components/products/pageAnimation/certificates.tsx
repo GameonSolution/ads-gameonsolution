@@ -7,15 +7,20 @@ const Certificates = () => {
 
       <div className="flex flex-wrap gap-4 justify-center">
         {/* South India's No.1 Box */}
-        <div className="bg-white flex flex-col p-5 rounded-xl w-[160px] h-[140px] items-center justify-center text-center">
+        <div
+          className="bg-white flex flex-col p-5 rounded-xl w-[160px] h-[140px] items-center justify-center text-center
+                        text-slate-900 dark:text-slate-900"
+        >
+          {" "}
+          {/* <- force dark text */}
           <span className="flex items-center justify-center gap-2">
             <span className="text-lg font-primary tracking-widest flex flex-col">
-              <span>SOUTH</span>
-              <span>INDIA'S</span>
+              <span className="text-slate-900">SOUTH</span>
+              <span className="text-slate-900">INDIA'S</span>
             </span>
             <span className="text-3xl font-primary text-secondary">NO.1</span>
           </span>
-          <span className="font-bold tracking-wide text-xs">
+          <span className="font-bold tracking-wide text-xs text-slate-900">
             SPORTS INFRA DEVELOPERS
           </span>
         </div>

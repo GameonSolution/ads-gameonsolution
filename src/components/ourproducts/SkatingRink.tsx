@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import ContactForm from "../ContactForm";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const SkatingRink: React.FC = () => {
   useEffect(() => {
@@ -95,6 +97,10 @@ const SkatingRink: React.FC = () => {
           </button>
         </motion.div>
       </div>
+
+      <Certificates />
+
+      <Awards />
 
       {/* ✅ SPECIFICATIONS */}
       <div className="py-20 bg-[#140c1f] text-white">

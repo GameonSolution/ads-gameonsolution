@@ -184,6 +184,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
+import Awards from "../Awards";
 
 const FootballTurf = () => {
   useEffect(() => {
@@ -262,6 +263,7 @@ const FootballTurf = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <Certificates />
+        <Awards />
       </motion.div>
 
       <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">

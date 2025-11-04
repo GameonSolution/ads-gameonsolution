@@ -166,6 +166,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
 import Testimonials from "../testimonial";
+import Awards from "../Awards";
 
 const CricketTurf = () => {
   useEffect(() => {
@@ -279,6 +280,7 @@ const CricketTurf = () => {
           transition={{ duration: 0.6 }}
         >
           <Certificates />
+          <Awards />
         </motion.div>
       </section>
     </div>

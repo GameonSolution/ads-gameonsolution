@@ -157,6 +157,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
 import Testimonials from "../testimonial";
+import Awards from "../Awards";
 
 const BadmintonCourt = () => {
   useEffect(() => {
@@ -210,6 +211,8 @@ const BadmintonCourt = () => {
       <Testimonials videoIds={["_jwQ3ORhzVA", "eLRRphd3FHk", "QJ1v4shTzac"]} />
 
       <Certificates />
+
+      <Awards />
 
       <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
         <div className="flex md:flex-row flex-col gap-12">

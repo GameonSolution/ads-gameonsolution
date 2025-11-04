@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import ContactForm from "../ContactForm";
 import Testimonials from "../testimonial";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const UShapeTurf: React.FC = () => {
   useEffect(() => {
@@ -126,6 +128,10 @@ const UShapeTurf: React.FC = () => {
       </div>
 
       <Testimonials videoIds={["-UBDqeQcR_E", "QJ1v4shTzac", "HYyoMwxdNG4"]} />
+
+      <Certificates />
+
+      <Awards />
 
       {/* ✅ U SHAPE TURF SECTION */}
       <div className="py-20 bg-[#102010] text-white">

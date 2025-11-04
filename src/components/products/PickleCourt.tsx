@@ -117,6 +117,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import AnimateCard from "../animateCard";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
+import Awards from "../Awards";
 // import { Helmet } from "react-helmet-async";
 
 const PickleballCourt = () => {
@@ -364,6 +365,7 @@ const PickleballCourt = () => {
 
       <AnimateCard>
         <Certificates />
+        <Awards />
       </AnimateCard>
     </div>
   );

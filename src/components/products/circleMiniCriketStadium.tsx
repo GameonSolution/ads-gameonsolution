@@ -136,6 +136,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
 import Testimonials from "../testimonial";
+import Awards from "../Awards";
 
 const CircleTurf = () => {
   useEffect(() => {
@@ -216,6 +217,7 @@ const CircleTurf = () => {
         className="bg-background py-20 px-4"
       >
         <Certificates />
+        <Awards />
       </motion.section>
     </div>
   );

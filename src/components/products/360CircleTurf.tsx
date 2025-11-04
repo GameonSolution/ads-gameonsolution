@@ -6,6 +6,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Awards from "../Awards";
 
 const CircleTurf360 = () => {
   useEffect(() => {
@@ -65,6 +66,7 @@ const CircleTurf360 = () => {
         viewport={{ once: true }}
       >
         <Certificates />
+        <Awards />
       </motion.div>
 
       {/* 360° Circle Turf Section */}

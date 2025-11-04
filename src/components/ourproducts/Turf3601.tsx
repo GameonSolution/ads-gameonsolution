@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import Testimonials from "../testimonial";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const Turf3601: React.FC = () => {
   useEffect(() => {
@@ -272,6 +274,10 @@ const Turf3601: React.FC = () => {
       </div>
 
       <Testimonials videoIds={["Pycz6S2Si-c", "oOK1DqD7zy8", "Mv-WmPfkp_8"]} />
+
+      <Certificates />
+
+      <Awards />
 
       {/* 360 TURF SPECIFICATIONS */}
       <div className="py-20 bg-[#102010] text-white">

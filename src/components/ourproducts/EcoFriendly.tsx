@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import ContactForm from "../ContactForm";
 import Testimonials from "../testimonial";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const EcoFriendly: React.FC = () => {
   useEffect(() => {
@@ -157,6 +159,10 @@ const EcoFriendly: React.FC = () => {
       </div>
 
       <Testimonials videoIds={["HYyoMwxdNG4", "N-8Sz7q75no", "-UBDqeQcR_E"]} />
+
+      <Certificates />
+
+      <Awards />
 
       {/* ✅ ECO-FRIENDLY TURF SECTION */}
       <div className="py-20 bg-[#0a2412] text-white">
