@@ -98,7 +98,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
     } catch (err) {
       console.error("Network error:", err);
       setStatus("error");
-      setServerMessage("Network error — check console.");
+      setServerMessage("Network error - check console.");
     } finally {
       setIsSubmitting(false);
     }
@@ -152,7 +152,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           type="submit"
           disabled={isSubmitting}
           className="bg-green-400 text-black font-semibold py-2 px-6 rounded-lg hover:bg-green-300 transition duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
-          >
+        >
           {isSubmitting ? "Sending..." : "Request Quotation"}
         </button>
       </div>

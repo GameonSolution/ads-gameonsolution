@@ -92,9 +92,6 @@ const SkatingRink: React.FC = () => {
             <li>UV-stable coating for South Indian climate</li>
             <li>Ideal for kids, schools, clubs & competitions</li>
           </ul>
-          <button className="mt-6 px-8 py-3 bg-gradient-to-r from-purple-400 to-pink-500 text-black rounded-lg font-medium hover:from-purple-300 hover:to-pink-400 transition">
-            <a href="https://wa.me/919615737373">Get a Free Quote</a>
-          </button>
         </motion.div>
       </div>
 

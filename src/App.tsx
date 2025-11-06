@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import FootballTurf from "./components/products/football";
@@ -22,6 +22,15 @@ import Turf3601 from "./components/ourproducts/Turf3601";
 import EcoFriendly from "./components/ourproducts/EcoFriendly";
 
 const App: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      // Prevent going back to "/"
+      window.history.replaceState(null, "", location.pathname);
+    }
+  }, [location.pathname]);
+
   return (
     <HelmetProvider>
       <div className="w-screen h-screen bg-primary no-scrollbar select-none">
@@ -38,7 +47,6 @@ const App: React.FC = () => {
           <Route path="/skating-rink" element={<SkatingRink />} />
           <Route path="/u-shape-turf" element={<UShapeTurf />} />
           <Route path="/eco-friendly-turf" element={<EcoFriendly />} />
-
           <Route path="/basket-ball" element={<BasketBallCourt />} />
           <Route path="/badminton-court" element={<BadmintonCourt />} />
           <Route path="/pickle-turf" element={<PickleTurf />} />

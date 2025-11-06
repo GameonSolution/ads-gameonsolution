@@ -171,7 +171,7 @@ const PickleballCourt = () => {
               Our Pickleball Court Turf is a premium synthetic sports surface
               designed specifically for high-performance pickleball play. Built
               with advanced turf technology, it ensures consistent ball bounce,
-              excellent traction, and superior player comfort—making it ideal
+              excellent traction, and superior player comfort-making it ideal
               for beginners and professional pickleball players alike.
               <br />
               <br />
@@ -214,7 +214,7 @@ const PickleballCourt = () => {
               </h2>
               <p className="text-lg text-white/85">
                 We design courts that look, feel and play like professional
-                venues — from precise orientation and drainage to the right
+                venues - from precise orientation and drainage to the right
                 surface texture and lighting.
               </p>
 
@@ -223,7 +223,7 @@ const PickleballCourt = () => {
                 <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
                   <h4 className="text-xl font-semibold">Standard Court</h4>
                   <p className="mt-2 text-white/90">
-                    20 ft × 44 ft (play area) — allow 30 × 60 ft total
+                    20 ft × 44 ft (play area) - allow 30 × 60 ft total
                   </p>
                 </div>
                 <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">

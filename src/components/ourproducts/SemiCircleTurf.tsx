@@ -60,8 +60,8 @@ const SemiCircleTurf: React.FC = () => {
                 <span className="text-[#94f0b6] font-semibold">
                   Semi Circle Turf
                 </span>{" "}
-                — engineered for compact training zones, urban playgrounds and
-                premium coaching arenas. Performance, safety and luxury — in
+                - engineered for compact training zones, urban playgrounds and
+                premium coaching arenas. Performance, safety and luxury - in
                 limited space.
               </p>
             </div>
@@ -112,13 +112,6 @@ const SemiCircleTurf: React.FC = () => {
             <li>Non-toxic, recyclable materials for safer play</li>
             <li>Durable construction built for heavy footfall</li>
           </ul>
-
-          <a
-            href="https://wa.me/919615737373"
-            className="inline-block mt-4 px-8 py-3 rounded-full font-medium shadow-md transition-all bg-gradient-to-r from-[#9ef3b8] to-[#d4af37] text-black"
-          >
-            Get a Free Quote
-          </a>
         </motion.div>
       </div>
 
@@ -182,7 +175,7 @@ const SemiCircleTurf: React.FC = () => {
                 <li>
                   <strong>Quantity:</strong> 450g / sqft ±20%
                 </li>
-                <li>Cool surface technology — lower heat build-up</li>
+                <li>Cool surface technology - lower heat build-up</li>
                 <li>Non-toxic, recyclable, athlete-safe</li>
               </ul>
             </div>
@@ -193,7 +186,7 @@ const SemiCircleTurf: React.FC = () => {
               <span className="text-[#9ef3b8] font-semibold">
                 Semi Circle Turf
               </span>{" "}
-              delivers pro-level quality in small footprints — perfect for urban
+              delivers pro-level quality in small footprints - perfect for urban
               academies, rooftop practice areas and compact community grounds.
             </p>
           </div>

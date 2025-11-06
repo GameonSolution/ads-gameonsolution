@@ -121,9 +121,6 @@ const UShapeTurf: React.FC = () => {
             <li>Perfect for batting cages, futsal, and indoor arenas</li>
             <li>Durable, low-maintenance, and eco-friendly</li>
           </ul>
-          <button className="mt-6 px-8 py-3 bg-green-400 text-black rounded-lg font-medium hover:bg-green-300 transition">
-            <a href="https://wa.me/919615737373">Get a Free Quote</a>
-          </button>
         </motion.div>
       </div>
 

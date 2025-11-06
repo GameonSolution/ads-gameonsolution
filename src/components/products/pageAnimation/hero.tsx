@@ -255,7 +255,7 @@ export const Hero = ({ title, subtitle, bgImgUrl }: HeroProps) => {
     } catch (err) {
       console.error("Network error:", err);
       setStatus("error");
-      setServerMessage("Network error — please check console.");
+      setServerMessage("Network error - please check console.");
     } finally {
       setIsSubmitting(false);
     }

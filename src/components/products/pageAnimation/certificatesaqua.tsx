@@ -1,8 +1,8 @@
-const Certificates = () => {
+const Certificatesaqua = () => {
   return (
     <div className="flex flex-col gap-10 justify-center py-20 items-center">
       <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white uppercase leading-tight text-center">
-        our <span className="text-secondary">certificates</span>
+        our <span className="text-cyan-400">certificates</span>
       </p>
 
       <div className="flex flex-wrap gap-4 justify-center">
@@ -52,4 +52,4 @@ const Certificates = () => {
   );
 };
 
-export default Certificates;
+export default Certificatesaqua;

@@ -152,9 +152,6 @@ const EcoFriendly: React.FC = () => {
             <li>Perfect for arenas, playgrounds, and rooftops</li>
             <li>Low maintenance with no water wastage</li>
           </ul>
-          <button className="mt-6 px-8 py-3 bg-secondary text-black rounded-lg font-medium hover:bg-white transition">
-            <a href="https://wa.me/919615737373">Get a Free Quote</a>
-          </button>
         </motion.div>
       </div>
 

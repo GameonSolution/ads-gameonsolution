@@ -60,7 +60,7 @@ const DiagonalPitch: React.FC = () => {
                 <span className="text-emerald-300 font-bold">
                   Diagonal Pitch
                 </span>{" "}
-                — the smart turf solution where{" "}
+                - the smart turf solution where{" "}
                 <span className="text-lime-300 font-bold">
                   square space meets cricket
                 </span>
@@ -99,7 +99,7 @@ const DiagonalPitch: React.FC = () => {
           </h2>
           <p className="text-gray-300 text-lg">
             <strong>Diagonal Pitch</strong> from GameOn Solution converts a
-            square turf into a corner-to-corner cricket pitch — a clever,
+            square turf into a corner-to-corner cricket pitch - a clever,
             space-maximising layout that keeps professional-level play intact.
           </p>
           <p className="text-gray-300 text-lg">
@@ -109,13 +109,10 @@ const DiagonalPitch: React.FC = () => {
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-3 text-lg">
             <li>Maximizes square turf area with diagonal play</li>
-            <li>Corner-to-corner cricket pitch — efficient & professional</li>
+            <li>Corner-to-corner cricket pitch - efficient & professional</li>
             <li>Engineered for multi-sport versatility and durability</li>
             <li>Premium, eco-friendly turf and advanced drainage</li>
           </ul>
-          <button className="mt-6 px-8 py-3 bg-emerald-300 text-black rounded-lg font-medium hover:bg-emerald-200 transition">
-            <a href="https://wa.me/919615737373">Get a Free Quote</a>
-          </button>
         </motion.div>
       </div>
 
@@ -133,7 +130,7 @@ const DiagonalPitch: React.FC = () => {
           </h2>
           <p className="text-gray-300 text-lg text-center max-w-3xl mx-auto">
             <strong>Diagonal Pitch Turf</strong> blends innovative layout with
-            precise engineering — ideal for cricket and multi-sport play in
+            precise engineering - ideal for cricket and multi-sport play in
             compact square grounds.
           </p>
 
@@ -189,7 +186,7 @@ const DiagonalPitch: React.FC = () => {
           </div>
 
           <div className="bg-emerald-900/20 rounded-xl p-6 text-center text-gray-200 text-lg">
-            <span className="text-emerald-300 font-bold">Diagonal Pitch</span> —
+            <span className="text-emerald-300 font-bold">Diagonal Pitch</span> -
             an elegant, high-performance solution for urban cricket & multi-use
             fields.
           </div>
