@@ -63,11 +63,11 @@ const EcoFriendly: React.FC = () => {
   return (
     <div className="bg-[#081f0e] text-white font-secondary">
       {/* HERO */}
-      <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
+      <div className="relative min-h-[60vh] md:min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/Football/Football-02.webp"
           alt="Eco Friendly Turf"
-          className="absolute w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-cyan-900/30 to-black/80" />
 
@@ -75,7 +75,7 @@ const EcoFriendly: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 px-6 w-full max-w-7xl"
+          className="relative z-10 px-6 w-full max-w-7xl py-12"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left - Headline + description */}
@@ -83,14 +83,18 @@ const EcoFriendly: React.FC = () => {
               <h1 className="text-3xl sm:text-5xl md:text-7xl text-secondary font-primary mb-4 uppercase">
                 Eco Friendly Turf
               </h1>
-              <p className="text-gray-200 max-w-2xl mx-auto text-xl md:text-2xl font-medium">
+              <p className="text-gray-200 max-w-2xl mx-auto lg:mx-0 text-xl md:text-2xl font-medium">
                 Sustainable, durable, and visually stunning. Designed for the
                 next generation of sports and green spaces.
               </p>
             </div>
 
-            {/* Right - Reusable Contact Form */}
-            <ContactForm />
+            {/* Right - Reusable Contact Form (constrained on mobile) */}
+            <div className="w-full max-w-md mx-auto lg:mx-0">
+              <div className="relative z-20">
+                <ContactForm />
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
@@ -114,7 +118,7 @@ const EcoFriendly: React.FC = () => {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary">
+          <h2 className="text-3xl md:text-4xl font-primary text-secondary uppercase">
             What Makes Our Turf Special?
           </h2>
           <p className="text-gray-200 text-lg">
@@ -133,7 +137,7 @@ const EcoFriendly: React.FC = () => {
       </div>
 
       {/* NEW: Football Turf Installation Content */}
-      <div className="py-12 bg-[#07160c]">
+      <div className="py-12 bg-[#081f0e]">
         <div className="max-w-7xl mx-auto px-6 lg:px-20 space-y-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-secondary uppercase">
             Expert Football Turf Installation Services South India - GameOn
