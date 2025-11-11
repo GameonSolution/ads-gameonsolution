@@ -62,30 +62,7 @@ const EcoFriendly: React.FC = () => {
 
   return (
     <div className="bg-[#081f0e] text-white font-secondary">
-      {/* ✅ HERO */}
-      {/* <div className="relative h-[75vh] flex items-center justify-center">
-        <img
-          src="/Football/Football-02.webp"
-          alt="Eco Friendly Turf"
-          className="absolute w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center relative z-10 px-6"
-        >
-          <h1 className="text-5xl md:text-7xl text-secondary font-primary mb-4 uppercase">
-            Eco Friendly Turf
-          </h1>
-          <p className="text-gray-200 max-w-2xl mx-auto text-xl md:text-2xl font-medium">
-            Sustainable, durable, and visually stunning. Designed for the next
-            generation of sports and green spaces.
-          </p>
-        </motion.div>
-      </div> */}
-
+      {/* HERO */}
       <div className="relative min-h-[75vh] flex items-start md:items-center justify-center pt-20 md:pt-0">
         <img
           src="/Football/Football-02.webp"
@@ -118,7 +95,7 @@ const EcoFriendly: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* ✅ INTRO SECTION */}
+      {/* INTRO */}
       <div className="max-w-7xl mx-auto px-6 lg:px-20 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <motion.img
           src="/Football/1.webp"
@@ -155,13 +132,137 @@ const EcoFriendly: React.FC = () => {
         </motion.div>
       </div>
 
+      {/* NEW: Football Turf Installation Content */}
+      <div className="py-12 bg-[#07160c]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20 space-y-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-secondary uppercase">
+            Expert Football Turf Installation Services South India - GameOn
+            Solution
+          </h2>
+
+          <p className="md:text-2xl text-lg leading-relaxed text-gray-200">
+            Upgrade your pitch with{" "}
+            <strong>high-quality FIFA-certified football turf</strong> designed
+            to perform in all weather conditions. If you&apos;re looking for
+            professional{" "}
+            <strong className="text-secondary">
+              football turf installation in Chennai, Bangalore, Hyderabad, or
+              anywhere in South India
+            </strong>
+            , GameOn Solution is your trusted partner. Our eco-friendly, durable
+            football turfs provide world-class playing conditions for academies,
+            community fields, and professional stadiums.
+          </p>
+
+          <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+            Why Choose GameOn Solution for Football Turf Installation?
+          </h3>
+          <ul className="list-disc pl-5 md:text-xl text-lg space-y-3 text-gray-200">
+            <li>
+              <strong>Environmentally Safe Grass Solutions:</strong> We use
+              recyclable, non-toxic materials, ensuring safe play and a minimal
+              environmental footprint.
+            </li>
+            <li>
+              <strong>Aqua Eco-Friendly Grass Systems:</strong> Advanced
+              piezo-drainage technology saves up to 70% water compared to
+              natural grass.
+            </li>
+            <li>
+              <strong>FIFA Pro Certified Quality:</strong> Tested for ball roll,
+              bounce, player interaction, and shock absorption for professional
+              play.
+            </li>
+            <li>
+              <strong>All-Weather Durability:</strong> Play year-round without
+              worrying about monsoons or extreme heat in South India.
+            </li>
+          </ul>
+
+          <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+            Football Turf Installation Process
+          </h3>
+          <ol className="list-decimal pl-5 md:text-xl text-lg space-y-3 text-gray-200">
+            <li>
+              <strong>Site Evaluations & Planning</strong> - Assessing drainage,
+              soil, and climate.
+            </li>
+            <li>
+              <strong>Ground Preparation</strong> - Creating a stable base with
+              perfect drainage.
+            </li>
+            <li>
+              <strong>Professional Installation</strong> - Using FIFA-approved
+              artificial turf with precise joints.
+            </li>
+            <li>
+              <strong>Quality Assurance</strong> - Comprehensive checks to meet
+              international football standards.
+            </li>
+          </ol>
+
+          <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+            Benefits of Our Football Turf Systems
+          </h3>
+          <ul className="list-disc pl-5 md:text-xl text-lg space-y-3 text-gray-200">
+            <li>All-climate performance with zero downtime.</li>
+            <li>Low maintenance and cost savings over natural grass.</li>
+            <li>Durable and safe for players with consistent ball roll.</li>
+            <li>Quick project delivery and long-term warranty coverage.</li>
+          </ul>
+
+          <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+            Service Locations Across South India
+          </h3>
+          <p className="md:text-xl text-lg text-gray-200">
+            GameOn Solution offers{" "}
+            <strong>football turf construction and installation</strong> in
+            Tamil Nadu{" "}
+            <span className="text-secondary">
+              (Chennai, Coimbatore, Madurai)
+            </span>
+            , Karnataka{" "}
+            <span className="text-secondary">(Bangalore, Mysore)</span>, Andhra
+            Pradesh{" "}
+            <span className="text-secondary">(Vijayawada, Visakhapatnam)</span>,
+            Kerala <span className="text-secondary">(Kochi, Trivandrum)</span>,
+            and Telangana{" "}
+            <span className="text-secondary">(Hyderabad, Warangal)</span>.
+          </p>
+
+          <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+            Why Eco-Friendly Football Turf?
+          </h3>
+          <p className="md:text-xl text-lg text-gray-200">
+            Our <strong>eco-friendly football grass</strong> eliminates toxic
+            rubber infill and uses silica sand or organic alternatives. It stays
+            cooler in the South Indian climate, provides excellent drainage
+            during monsoons, and is 100% recyclable.
+          </p>
+
+          <ul className="list-disc pl-5 md:text-xl text-lg space-y-3 text-gray-200">
+            <li>No toxic rubber exposure or respiratory risks.</li>
+            <li>Colder surface temperature with superior drainage.</li>
+            <li>FIFA Pro-level playability with 10+ years of durability.</li>
+            <li>Environmentally safe and fully recyclable materials.</li>
+          </ul>
+
+          <p className="md:text-xl text-lg mt-6 text-gray-200">
+            <strong>Transform your football field with GameOn Solution</strong>.
+            Contact us today for a free site assessment and professional quote.
+            Experience world-class turf installation that delivers durability,
+            eco-friendliness, and top performance for South India&apos;s
+            climate.
+          </p>
+        </div>
+      </div>
+
+      {/* Testimonials, Certificates, Awards */}
       <Testimonials videoIds={["HYyoMwxdNG4", "N-8Sz7q75no", "-UBDqeQcR_E"]} />
-
       <Certificates />
-
       <Awards />
 
-      {/* ✅ ECO-FRIENDLY TURF SECTION */}
+      {/* ECO-FRIENDLY TURF SECTION */}
       <div className="py-20 bg-[#0a2412] text-white">
         <div className="max-w-6xl mx-auto px-6 flex flex-col gap-8">
           <h2 className="text-3xl md:text-4xl font-primary text-secondary uppercase text-center">
@@ -174,7 +275,7 @@ const EcoFriendly: React.FC = () => {
             produces less heat than conventional rubber-infilled turfs.
           </p>
 
-          {/* ✅ SPECIFICATIONS */}
+          {/* SPECIFICATIONS */}
           <div className="bg-green-900/40 border border-green-700 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-xl font-bold text-secondary mb-4">
@@ -237,7 +338,7 @@ const EcoFriendly: React.FC = () => {
         </div>
       </div>
 
-      {/* ✅ RUBBER INFILLED TURF SECTION */}
+      {/* RUBBER INFILLED TURF */}
       <div className="py-20 bg-[#081d0f] text-white">
         <div className="max-w-6xl mx-auto px-6 flex flex-col gap-8">
           <h2 className="text-3xl md:text-4xl font-primary text-red-400 uppercase text-center">
@@ -249,7 +350,7 @@ const EcoFriendly: React.FC = () => {
             cause skin problems, and has a shorter lifespan for long-term play.
           </p>
 
-          {/* ✅ SPECIFICATIONS */}
+          {/* SPECIFICATIONS */}
           <div className="bg-green-900/30 border border-green-800 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-xl font-bold text-red-400 mb-4">
@@ -311,7 +412,7 @@ const EcoFriendly: React.FC = () => {
         </div>
       </div>
 
-      {/* ✅ MAINTENANCE SERVICES */}
+      {/* MAINTENANCE */}
       <div className="py-20 bg-[#0a2412]">
         <h2 className="text-center text-3xl md:text-4xl font-primary uppercase mb-12 text-secondary">
           Turf Maintenance Services
@@ -335,7 +436,7 @@ const EcoFriendly: React.FC = () => {
         </div>
       </div>
 
-      {/* ✅ GALLERY SECTION */}
+      {/* GALLERY */}
       <div className="py-20 bg-[#0a2412]">
         <h2 className="text-center text-3xl md:text-4xl font-primary uppercase mb-12 text-secondary">
           Project Gallery
@@ -361,24 +462,18 @@ const EcoFriendly: React.FC = () => {
               viewport={{ once: true }}
               className="relative group overflow-hidden rounded-2xl shadow-xl border border-green-800/50"
             >
-              {/* Image with gradient overlay */}
               <img
                 src={img}
                 alt={`Gallery ${idx + 1}`}
                 className="w-full h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition" />
-
-              {/* Label */}
-              {/* <div className="absolute bottom-4 left-4 text-secondary text-lg font-bold drop-shadow-lg">
-                GameOn Project
-              </div> */}
             </motion.div>
           ))}
         </div>
       </div>
 
-      {/* ✅ FAQ */}
+      {/* FAQ */}
       <div className="py-20 max-w-6xl mx-auto px-6 text-center flex flex-col gap-10">
         <p className="text-[12px] font-secondary uppercase tracking-[1px] text-white">
           FAQs
@@ -430,6 +525,18 @@ const EcoFriendly: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* FOOTER */}
+      <footer className="bg-[#081f0e] border-t border-green-900 py-8 text-center text-gray-400 text-sm">
+        <p>
+          © 2025{" "}
+          <span className="text-secondary font-semibold">GameOn Solution</span>{" "}
+          - All rights reserved.
+        </p>
+        <p className="text-gray-500 text-xs mt-2">
+          Your data is 100% secure and protected with us.
+        </p>
+      </footer>
     </div>
   );
 };
